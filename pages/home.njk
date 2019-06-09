@@ -1,13 +1,16 @@
 ---
+title: Home page
 layout: layouts/default.njk
 permalink: /
+tags:
+  - nav
 ---
-<p>Welcome! You're on your way to building an awesome website.</p>
+<h1>Welcome! You're on your way to building an awesome website.</h1>
 <p>Here's a few sample posts. They live under <code>/posts</code> and can be accessed anywhere by iterating through <code>collections.posts</code>.</p>
 <ul>
 {%- for post in collections.posts -%}
   <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     <p>by {{ post.data.author }}</p>
     <time>on {{ post.date }}</time>
   </li>
