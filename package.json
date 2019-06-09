@@ -1,0 +1,25 @@
+{
+  "name": "eleventy-starter",
+  "version": "0.1.0",
+  "description": "Bryan King's template for creating static sites with Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brykng/eleventy-starter.git"
+  },
+  "keywords": [
+    "Eleventy"
+  ],
+  "author": "Bryan King",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brykng/eleventy-starter/issues"
+  },
+  "homepage": "https://github.com/brykng/eleventy-starter#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  }
+}
