@@ -1,0 +1,19 @@
+<header>
+  <a href="/">{{ site.title }}</a>
+  {% if collections.nav %}
+  <nav>
+    <ul>
+      {% for nav in collections.nav %}
+      {% if nav.data.navTitle %}
+        {% set navTitle = nav.data.navTitle %}
+      {% else %}
+        {% set navTitle = nav.data.title %}
+      {% endif %}
+      <li>
+        <a href="{{ nav.url }}">{{ navTitle }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</header>
