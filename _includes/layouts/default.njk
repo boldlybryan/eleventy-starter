@@ -8,6 +8,9 @@
   <style>{% include 'css/main.css' %}</style>
 </head>
 <body>
-  {{ content | safe }}
+  {% include 'components/header.njk' %}
+  <main>
+    {{ content | safe }}
+  </main>
 </body>
 </html>
